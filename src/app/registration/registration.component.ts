@@ -3,11 +3,11 @@ import { User } from './user.model';
 
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-registration',
+  templateUrl: './registration.component.html',
+  styleUrls: ['./registration.component.css']
 })
-export class RegisterComponent {
+export class RegistrationComponent {
   newUser: User = { username: '', password: '' };
   registrationDetails = {
     username: '',
