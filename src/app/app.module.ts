@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
+import { FacultyLoginComponent } from './faculty-login/faculty-login.component';
 import { RegistrationPendingComponent } from './registration-pending/registration-pending.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
@@ -14,7 +14,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent,
+    FacultyLoginComponent,
     RegistrationPendingComponent,
     AdminLoginComponent,
     ForgotPasswordComponent

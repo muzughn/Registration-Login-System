@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { User } from '../register/user.model';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-Faculty-Login',
+  templateUrl: './faculty-login.component.html',
+  styleUrls: ['./faculty-login.component.css']
 })
-export class LoginComponent {
+export class FacultyLoginComponent {
   user: User = {
     username: '',
     password: ''
