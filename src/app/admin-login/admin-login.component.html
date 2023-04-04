@@ -1,0 +1,25 @@
+<h2>Admin Login</h2>
+<form (submit)="onSubmit()">
+  <label>
+    Username:
+    <input type="text" name="username" [(ngModel)]="loginDetails.username">
+  </label>
+  <br>
+  <label>
+    Password:
+    <input type="password" name="password" [(ngModel)]="loginDetails.password">
+  </label>
+  <br>
+  <button type="submit">Login</button>
+</form>
+
+<div *ngIf="verifiedRegistrations.length > 0">
+  <h3>Verified Registrations:</h3>
+  <ul>
+    <li *ngFor="let registration of verifiedRegistrations">
+      <span>Username: {{registration.username}}</span>
+      <span>Password: {{registration.password}}</span>
+      <button (click)="onVerifyRegistration(registration)">Verify Registration</button>
+    </li>
+  </ul>
+</div>

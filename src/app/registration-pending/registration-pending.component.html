@@ -1,0 +1,10 @@
+<div *ngIf="registrationDetails.length > 0">
+  <h3>Pending Registrations:</h3>
+  <ul>
+    <li *ngFor="let registration of registrationDetails">
+      <span>Username: {{registration.username}}</span>
+      <span>Password: {{registration.password}}</span>
+      <button (click)="onVerifyRegistration(registration)">Verify Registration</button>
+    </li>
+  </ul>
+</div>
