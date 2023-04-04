@@ -7,7 +7,7 @@ import { User } from './user.model';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-  newUser: User = { username: '', email: '', password: '', confirmPassword: '' };
+  newUser: User = { username: '', email: '', password: '', confirmPassword: '', role: '' };
   registrationDetails = {
     username: '',
     email: '',

@@ -12,7 +12,8 @@ export class FacultyLoginComponent {
     username: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    role: ''
   };
   users: User[] = JSON.parse(localStorage.getItem('users') || '[]');
 
