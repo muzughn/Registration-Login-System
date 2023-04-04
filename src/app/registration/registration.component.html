@@ -2,12 +2,22 @@
 <form (submit)="onSubmit()">
   <label>
     Username:
-    <input type="text" name="username" [(ngModel)]="registrationDetails.username">
+    <input type="text" name="username" [(ngModel)]="registrationDetails.username" required>
+  </label>
+  <br>
+  <label>
+    Email:
+    <input type="email" name="email" [(ngModel)]="registrationDetails.email" required>
   </label>
   <br>
   <label>
     Password:
-    <input type="password" name="password" [(ngModel)]="registrationDetails.password">
+    <input type="password" name="password" [(ngModel)]="registrationDetails.password" required>
+  </label>
+  <br>
+  <label>
+    Confirm Password:
+    <input type="password" name="password" [(ngModel)]="registrationDetails.confirmPassword" required>
   </label>
   <br>
   <label>
