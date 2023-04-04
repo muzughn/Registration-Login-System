@@ -9,6 +9,8 @@ import { FacultyLoginComponent } from './faculty-login/faculty-login.component';
 import { RegistrationPendingComponent } from './registration-pending/registration-pending.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { FacultyProfileComponent } from './faculty-profile/faculty-profile.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,15 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     FacultyLoginComponent,
     RegistrationPendingComponent,
     AdminLoginComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    FacultyProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
