@@ -22,5 +22,8 @@ export class LoginComponent {
       // Authentication failed
     }
   }
+  onForgotPassword() {
+    // TODO: Implement forgot password logic here
+  }
 }
 

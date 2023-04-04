@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationPendingComponent } from './registration-pending/registration-pending.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     RegisterComponent,
     LoginComponent,
     RegistrationPendingComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
